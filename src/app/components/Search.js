@@ -14,7 +14,9 @@ const Search = () => {
           : "bg-white rounded-[20px] px-6 xl:pr-4 xl:h-[98px]"
       } hidden xl:block w-full relative shadow-lg`}
     >
-      <LocationSelection/>
+      <div className="xl:h-full flex items-center px-6 xl:px-0">
+        <LocationSelection />
+      </div>
     </div>
   );
 };
