@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import { SearchContext } from "../context/search";
-import LocationSelection from "./LocationSelection";
+import { DataSelection, HoursSelection, LocationSelection } from ".";
 
 const Search = () => {
   const { searchActive } = useContext(SearchContext);
@@ -14,8 +14,22 @@ const Search = () => {
           : "bg-white rounded-[20px] px-6 xl:pr-4 xl:h-[98px]"
       } hidden xl:block w-full relative shadow-lg`}
     >
-      <div className="xl:h-full flex items-center px-6 xl:px-0">
+      <div className={`flex h-full ${searchActive && "container mx-auto"}`}>
         <LocationSelection />
+        <DataSelection />
+        <HoursSelection />
+        {/* btn */}
+        <div className="xl:h-full flex items-center px-6 xl:px-0">
+          <button
+            className={`${
+              searchActive
+                ? "btn btn-sm btn-accent xl:w-[164px]"
+                : "btn btn-lg btn-accent xl:w-[184px]"
+            }`}
+          >
+            Search
+          </button>
+        </div>
       </div>
     </div>
   );

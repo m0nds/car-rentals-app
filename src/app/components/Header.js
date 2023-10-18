@@ -18,6 +18,10 @@ const Header = () => {
     query: "(min-width: 1300px)",
   });
 
+  const removeNav = () => {
+    setNav(false)
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       //header
@@ -87,6 +91,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             Home
           </Link>
@@ -96,6 +101,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             Cars
           </Link>
@@ -105,6 +111,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             About
           </Link>
@@ -114,6 +121,8 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
+            
           >
             Why Us
           </Link>
@@ -123,6 +132,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             Testimonials
           </Link>
@@ -132,6 +142,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             Contact
           </Link>
@@ -141,6 +152,7 @@ const Header = () => {
             activeClass="active"
             smooth={deskstopMode}
             spy={true}
+            onClick={removeNav}
           >
             See all cars
           </Link>

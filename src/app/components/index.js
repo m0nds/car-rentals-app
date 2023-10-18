@@ -5,7 +5,7 @@ export { default as Cars } from './Cars';
 export { default as CarSlider } from './CarSlider';
 export { default as Copyright } from './Copyright';
 export { default as Cta } from './Cta';
-export { default as DataSelection } from './DataSelection';
+export { default as DataSelection } from './DateSelection';
 export { default as Footer } from './Footer';
 export { default as Header } from './Header';
 export { default as Hero } from './Hero';
